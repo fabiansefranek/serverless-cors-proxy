@@ -6,10 +6,10 @@ export default {
     env: Env,
     ctx: ExecutionContext
   ): Promise<Response> {
-    const { pathname, searchParams } = new URL(request.url);
-    const url = searchParams.get("url");
+    const { pathname } = new URL(request.url);
+    const url = pathname.slice(1);
     if (!url) {
-      return new Response("Missing url parameter", {
+      return new Response("Append ?th", {
         status: 400,
         headers: {
           "access-control-allow-origin": "*",
