@@ -10,7 +10,7 @@ export default {
     const url = pathname.slice(1);
     if (!url) {
       return new Response(
-        "Append the requested resource to this domain. Example.: https://cors.fabiansefranek.com/<url>",
+        "Append the requested resource to this domain. Example: https://cors.fabiansefranek.com/<url>",
         {
           status: 400,
           headers: {
