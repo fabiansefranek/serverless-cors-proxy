@@ -10,7 +10,7 @@
   <p align="center">
     A serverless cors proxy to avoid cors-related problems 
     <br>
-    <a href="https://cors.fabiansefranek.com/example.com">View Demo</a>
+    <a href="https://cors.fabiansefranek.com/https://example.com">View Demo</a>
     ·
     <a href="https://github.com/fabiansefranek/serverless-cors-proxy/issues">Report Bug</a>
     ·
@@ -75,12 +75,12 @@ After publishing the worker you can use it by appending the url of you want to p
 Example:
 
 ```sh
-curl https://cors.fabiansefranek.com?url=https://example.com
+curl https://cors.fabiansefranek.com/https://example.com
 ```
 
 ## Limits
 
-Due to Cloudflare's limits the worker has the following limitations:
+Due to Cloudflare's limits the worker has the following restrictions:
 
 - Only GET requests
 - 100MB response body size (if exceeded, worker will return a 413 error code)
