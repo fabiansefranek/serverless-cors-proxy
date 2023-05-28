@@ -57,7 +57,7 @@ npm install wrangler
    ```sh
    npm install
    ```
-4. Publish
+4. Publish the worker
    ```sh
    wrangler publish
    ```
