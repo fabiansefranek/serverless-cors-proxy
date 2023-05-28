@@ -9,12 +9,15 @@ export default {
     const { pathname } = new URL(request.url);
     const url = pathname.slice(1);
     if (!url) {
-      return new Response("Append ?th", {
-        status: 400,
-        headers: {
-          "access-control-allow-origin": "*",
-        },
-      });
+      return new Response(
+        "Append the requested resource to this domain. Example.: https://cors.fabiansefranek.com/<url>",
+        {
+          status: 400,
+          headers: {
+            "access-control-allow-origin": "*",
+          },
+        }
+      );
     }
 
     const response = await fetch(url).catch((err) => {
