@@ -82,5 +82,5 @@ curl https://cors.fabiansefranek.com/https://example.com
 
 Due to Cloudflare's limits the worker has the following restrictions:
 
-- Only GET requests
+- Only GET requests allowed
 - 100MB response body size (if exceeded, worker will return a 413 error code)
